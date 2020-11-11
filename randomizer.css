@@ -1,0 +1,272 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('https://raw.githubusercontent.com/katinaskatina/images/main/fishing.jpeg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head {
+    width: 80%;
+    padding-top: 5%;
+    font-family: 'Russo One', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.inputs{
+    width: 80%;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    color: white;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 5px solid black;
+    font-size: 2em;
+}
+
+.inputs input{
+    width: 30%;
+    height: 2em;
+    margin-bottom: 3%;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    outline: none;
+    border: none;
+    border: 1px solid black;
+    background-color: none;
+    font-size: 0.8em;
+    
+}
+
+.input1{
+    margin-left: 0%;
+}
+
+button {
+    font-family: 'Russo One', sans-serif;
+    margin-top: 2%;
+    background-color: white;
+    color: black;
+    border: none;
+    outline: 1px solid black;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-size: 1.5em;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+    outline: 1px solid white;
+}
+
+.table{
+    margin-top: 1%;
+    margin-bottom: 3%;
+    width: 80%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.625);
+    border: 3px solid black;
+    font-family: 'Russo One', sans-serif;
+}
+
+.table__left{
+    width: 15%;
+    border-right: 3px solid black;
+}
+
+.competitorAmount{
+    outline: 3px solid black;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgba(46, 52, 52, 0.221);
+}
+
+.competitorNumbers{
+    text-align: center;
+    font-size: 2em;
+    background-color: rgba(46, 52, 52, 0.221);
+}
+
+.competitorNum{
+    border-bottom: 3px solid black;
+}
+
+.competitorNum:last-child{
+    border-bottom: none;
+}
+
+.table__right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sectorAmount{
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgba(46, 52, 52, 0.221);
+}
+
+.roundsAmount{
+    display: flex;
+    justify-content: space-between;
+    outline: 3px solid black;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgba(83, 168, 187, 0.575);
+}
+
+.roundNumber{
+    width: 100%;
+    border-right: 3px solid black;
+}
+
+.roundNumber:last-child{
+    border: none;
+}
+
+.roundColums{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    border-left: 3px solid black;
+}
+
+.column:first-child{
+    border: none;
+}
+
+.cell{
+    border-bottom: 3px solid black;
+}
+
+.cell:last-child{
+    border: none;
+}
+
+
+
+
+/*
+.table {
+    font-family: 'Russo One', sans-serif;
+    margin-top: 1%;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.625);
+    outline: 3px solid black;
+}
+
+.table__head{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 3px solid black;
+}
+
+.table__headLeft{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    border-right: 3px solid black;
+    font-size: 1.5em;
+    padding: 0.5%;
+}
+
+.table__headRight{
+    width: 100%;
+    font-size: 1.5em;
+    padding-top: 0.5%;
+}
+
+.sectorAmount{
+    height: 50%;
+    border-bottom: 3px solid black;  
+}
+
+.roundsAmount{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.roundNumber {
+    width: 100%;
+    border-right: 3px solid black;
+}
+
+.roundNumber:last-child{
+    border: none;
+}
+
+.table__body{
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.table__bodyLeft{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 3px solid black;
+}
+
+.competitorNumber{
+    padding-top: 0.5%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.table__bodyRight{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column{
+    padding-top: 0.5%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 3px solid black;
+}
+
+.cell{
+    padding: 0;
+    border-bottom: 1px solid black;
+}
+
+
